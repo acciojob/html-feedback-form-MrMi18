@@ -8,25 +8,24 @@
 
 <body>
    <h1>Feedback Form</h1>
-	<form action="/action.php" method="post">
-		<label for="name" >Name</label>
-		<input type="text" id="name" placeholder="name" minlength="3" maxlength="50">
-		<br>
-		<br>
-		<label for="portfolio" required>Portfolio</label>
-		<input type="url" id ="portfolio">
-		<br>
-		<br>
-		<label for="favColor">Favorite Color</label>
-		<input type="color" id ="favColor">
-		<br>
-		<br>
-		<label for="likeness" >Likenes</label>
-		<input type="range" id="likeness"  minlength="1" maxlength="100" />
-	    
-	</form>
-
-
+	 <form id="my-form" method="post">
+		 <div>
+			<label for="name">Your name</label>
+			 <input type="text" id="name" minlength="3" maxlength="50" required />
+		</div>
+		 <div>
+			 <label for="portfolio">2.portfolio:</label>
+			 <input type="url" name="portfolio" id="portfolio">
+		 </div>
+		 <div>
+			 <label for="favColor">favColor:</label>
+			 <input type="color" name="favColor" id="favColor">
+		 </div>
+		 <div>
+			 <label for="likeness">From one to hundred choose likeness</label>
+			 <input type="range" id="likeness" min="1" max="100" />
+		 </div>
+	 </form>
 	
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
